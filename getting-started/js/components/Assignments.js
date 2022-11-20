@@ -24,15 +24,18 @@ export default {
                 {
                     id: 1,
                     name: 'Learn Laravel',
-                    completed: false
+                    completed: false,
+                    tag:'programming'
                 }, {
                     id: 2,
                     name: 'Learn Vue 3',
-                    completed: false
+                    completed: false,
+                    tag:'programming'
                 }, {
                     id: 3,
                     name: 'Learn Inertia',
-                    completed: false
+                    completed: false,
+                    tag:'magic'
                 },
             ],
 
