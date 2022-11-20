@@ -8,23 +8,25 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="h-full w-full">
-<div id="app" class="grid justify-center content-center h-full w-full text-center">
-    <h1>{{ greeting }}</h1>
-    <input type="text" v-model="greeting" class="border">
+<body class="h-full grid place-items-center">
+<div id="app" class="">
+    <button :class="active ? 'text-red-500':'text-green-500'"
+            @click="toggle"
+    >
+        Click me
+    </button>
 </div>
 <script>
     Vue.createApp({
         data() {
             return {
-                greeting: 'Hello Vue!'
+                active: false,
             };
         },
-
-        mounted(){
-            setTimeout(()=>{
-                this.greeting = 'Changed'
-            },1000)
+        methods: {
+            toggle() {
+                this.active = !this.active;
+            }
         }
     }).mount('#app')
 </script>
