@@ -38,34 +38,7 @@
 </div>
 <script>
     let app = {
-        data(){
-            return{
-                assignments:[
-                    {
-                        id:1,
-                        name:'Learn Laravel',
-                        completed:true
-                    },{
-                    id:2,
-                    name:'Learn Vue 3',
-                        completed:false
-                    },{
-                    id:3,
-                    name:'Learn Inertia',
-                        completed:false
-                    },
-                ]
-            }
-        },
 
-        computed:{
-            completed(){
-                return this.assignments.filter(assignment => assignment.completed);
-            },
-            inProgress(){
-                return this.assignments.filter(assignment => !assignment.completed);
-            }
-        }
     }
     Vue.createApp(app).mount('#app')
 </script>
