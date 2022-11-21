@@ -1,6 +1,6 @@
 export default {
     template: `
-        <li class="px-2 py-1">
+        <li class="px-2 py-1 max-w-[12rem]">
             <label class="flex justify-between items-center">
                     {{ assignment.name }}
                 <input 

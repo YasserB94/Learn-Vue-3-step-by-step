@@ -6,7 +6,7 @@ export default {
         AssignmentCreate
     },
     template: `
-       <section class="space-y-4">
+       <section class="grid grid-cols-2 gap-2">
       <assignment-list
         :assignments="filters.inProgress"
         title="In Progress"
@@ -14,8 +14,9 @@ export default {
       <assignment-list
         :assignments="filters.completed"
         title="Completed"
+        canToggle
       ></assignment-list>  
-    <assignment-create @add="add"></assignment-create>
+    <assignment-create @add="add" class="col-span-2 grid justify-center"></assignment-create>
       </section>
     `,
     data() {
