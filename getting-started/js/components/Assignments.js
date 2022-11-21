@@ -24,7 +24,7 @@ export default {
                 {
                     id: 1,
                     name: 'Learn Laravel',
-                    completed: false,
+                    completed: true,
                     tag:'programming'
                 }, {
                     id: 2,
