@@ -1,13 +1,11 @@
 <script>
 export default {
-  name: "ContactView"
-}
+  name: "ContactView",
+};
 </script>
 
 <template>
-<h1>Hello Contact</h1>
+  <h1 className="text-3xl font-bold underline">Hello Contact,Tailwind!</h1>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
