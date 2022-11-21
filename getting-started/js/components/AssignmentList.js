@@ -13,9 +13,10 @@ export default {
             <h2 class="text-xl font-bold">{{title}}
             <span>({{assignments.length}})</span>
             </h2>
-            <assignment-tags :initialTags="assignments.map(a=>a.tag)"
-            :currentTag="currentTag"
-            @change="currentTag = $event"></assignment-tags>
+            <assignment-tags
+            v-model:currentTag="currentTag"
+            :initialTags="assignments.map(a=>a.tag)"
+            ></assignment-tags>
             <ul class=" mt-4 border px-2 space-y-2  divide-y rounded bg-slate-700">
                 <assignment
                     v-for="assignment in filteredAssignments"
