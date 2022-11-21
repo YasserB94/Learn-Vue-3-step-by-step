@@ -1,5 +1,7 @@
 <script setup>
 import {ref} from "vue";
+import {useFlash} from "../composables/useFlash";
+const {flash} = useFlash();
 const greeting = ref("Hello Composition API - Ref")
 let i;
 const resetInputOnInterval = () => {
@@ -9,6 +11,7 @@ const resetInputOnInterval = () => {
   i = setInterval(() => {
     greeting.value = 'Hello Composition API - Ref'
   }, 3000)
+
 }
 
 
@@ -24,6 +27,7 @@ const resetInputOnInterval = () => {
            v-model="greeting"
     >
   </div>
+  <button @click="flash('Composable Modal','Hello Modal!','success')">Click me for a Modal</button>
 </template>
 
 <style scoped>
