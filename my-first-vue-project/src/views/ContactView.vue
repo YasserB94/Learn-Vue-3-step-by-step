@@ -26,8 +26,9 @@ const food=useStorage('food')
 
 </script>
 <template>
+  <section class="grid gap-4">
   <h1>Hello Contact</h1>
-  <p className="text-3xl font-bold underline">Hello Tailwind!</p>
+  <p class="text-3xl font-bold underline">Hello Tailwind!</p>
   <div class="my-2 border p-2 rounded w-fit space-y-2">
     <p>{{ greeting }}</p>
     <input class="p-1 text-slate-800"
@@ -36,7 +37,7 @@ const food=useStorage('food')
            v-model="greeting"
     >
   </div>
-  <button @click="flash('Composable Modal','Hello Modal!','success')">Click me for a Modal</button>
+  <button class="block" @click="flash('Composable Modal','Hello Modal!','success')">Click me for a Modal</button>
   <div class="my-2 border p-2 rounded w-fit space-y-2">
     <p>What is your favourite food ? </p>
     <input class="p-1 text-slate-800"
@@ -50,6 +51,7 @@ const food=useStorage('food')
            v-model="food"
     >
   </div>
+  </section>
 </template>
 <!--           @input="writeToLocalStorage('food',favouriteFood)"-->
 <style scoped>
