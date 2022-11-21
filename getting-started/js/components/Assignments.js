@@ -20,26 +20,15 @@ export default {
     `,
     data() {
         return {
-            assignments: [
-                {
-                    id: 1,
-                    name: 'Learn Laravel',
-                    completed: true,
-                    tag:'programming'
-                }, {
-                    id: 2,
-                    name: 'Learn Vue 3',
-                    completed: false,
-                    tag:'programming'
-                }, {
-                    id: 3,
-                    name: 'Learn Inertia',
-                    completed: false,
-                    tag:'magic'
-                },
-            ],
+            assignments: [],
 
         }
+    },
+    async created(){
+        const url = "http://localhost:3001/assignments"
+        const response = await fetch(url)
+        const data = await response.json()
+        this.assignments = data;
     },
     computed: {
         filters() {
