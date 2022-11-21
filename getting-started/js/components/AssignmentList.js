@@ -10,7 +10,7 @@ export default {
          v-show="show && assignments.length"
          class="border rounded border-slate-200 bg-slate-900 p-4"
         >
-            <div class="flex w-full justify-between">
+            <div class="flex w-full justify-between ">
             <h2 class="text-xl font-bold">{{title}}
             <span>({{assignments.length}})</span>
             </h2>
