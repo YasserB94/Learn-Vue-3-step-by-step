@@ -1,6 +1,5 @@
 <script setup>
 import {ref} from "vue";
-
 const greeting = ref("Hello Composition API - Ref")
 let i;
 const resetInputOnInterval = () => {
@@ -10,8 +9,9 @@ const resetInputOnInterval = () => {
   i = setInterval(() => {
     greeting.value = 'Hello Composition API - Ref'
   }, 3000)
-
 }
+
+
 </script>
 <template>
   <h1>Hello Contact</h1>
