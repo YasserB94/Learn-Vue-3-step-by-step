@@ -17,7 +17,7 @@ import HelloWorld from "@/components/HelloWorld.vue"; //@alias setup -> vite.con
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink tabindex="1" to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
         <RouterLink to="/counter">Counter</RouterLink>
