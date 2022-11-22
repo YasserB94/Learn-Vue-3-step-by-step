@@ -21,6 +21,7 @@ import HelloWorld from "@/components/HelloWorld.vue"; //@alias setup -> vite.con
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
         <RouterLink to="/counter">Counter</RouterLink>
+        <RouterLink to="/modal">Modal</RouterLink>
       </nav>
     </div>
   </header>

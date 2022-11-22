@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ContactView from "../views/ContactView.vue";
 import CounterView from "@/views/CounterView.vue";
+import ModalView from '@/views/ModalView.vue';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -22,10 +23,15 @@ const router = createRouter({
       path: "/contact",
       name: "contact",
       component: ContactView,
-    },    {
+    },
+    {
       path: "/counter",
       name: "counter",
       component: CounterView,
+    },{
+      path: "/modal",
+      name: "modal",
+      component: ModalView,
     },
   ],
 });
