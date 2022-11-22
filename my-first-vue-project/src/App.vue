@@ -20,6 +20,7 @@ import HelloWorld from "@/components/HelloWorld.vue"; //@alias setup -> vite.con
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
+        <RouterLink to="/counter">Counter</RouterLink>
       </nav>
     </div>
   </header>
